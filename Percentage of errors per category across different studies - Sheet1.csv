@@ -1,0 +1,15 @@
+Error category,McCall and Kölling,Brown and Altadmri,Mase and Nel,Current Study
+1.0 Variable: Incorrect attempt to use variable,19.90%,n/a,2.10%,6.80%
+2.0 Variable: Incorrect variable declaration,5.20%,n/a,n/a,0.40%
+3.0 Method: Incorrect method call,18%,25.30%,38.10%,6.80%
+4.0 Method: Incorrect method declaration,7.90%,2.20%,9.30%,2.80%
+5.0 Constructor: Incorrect constructor call,0.80%,n/a,5.60%,0.60%
+6.0 Constructor: Incorrect constructor declaration,0.40%,n/a,n/a,0%
+7.0 Incorrect/attempted use of class or type,6%,3.40%,24%,12.50%
+8.0 Semantic error,12.70%,24.70%,11.40%,30.60%
+9.0 Simple syntactical error,20.50%,10.70%,8.80%,3.40%
+10.0 Statement outside method/block,0.20%,n/a,n/a,0.30%
+11.0 Uncategorized,8.50%,n/a,n/a,0.70%
+12.0 Logical error,n/a,n/a,0.70%,35.20%
+Bracket Syntax,n/a,33.70%,n/a,n/a
+Amount of investigated errors,1059,5'526'153,2396,710

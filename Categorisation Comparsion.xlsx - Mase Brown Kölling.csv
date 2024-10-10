@@ -1,0 +1,32 @@
+Brown,Mase,Kölling,
+Misunderstanding (or forgetting) syntax,Error Description,Sub Category,Super Category
+A: Confusing the assignment operator (=) with the com- parison operator (==).,N: Confusing the assignment operator (=) with the comparison operator (==).,9.1 ,
+"C: Unbalanced parentheses, curly brackets, square brackets and quotation marks, or using these different symbols interchangeably.",-,"9.5 - 9.9, 9.11, 9.13, 4.10, 5.6",
+D: Confusing “short-circuit” evaluators (&& and ||) with conventional logical operators (& and |).,M: Confusing short-circuit evaluators (&& and ||) with conventional logical operators (& and |).,-,9.0
+E: Incorrect semi-colon after an if selection structure be- fore the if statement or after the for or while repetition struc- ture before the respective for or while loop.,-,-,9.0
+F: Wrong separators in for loops (using commas instead of semi-colons),Q: Wrong separators in for loops (e.g. using commas instead of semi-colons).,9.0,
+G: Inserting the condition of an if statement within curly brackets instead of parentheses.,-,9.11,
+H: Using keywords as method names or variable names. For example: int new;,-,-,2.0
+J: Forgetting parentheses after a method call.,-,3.8 ,
+K: Incorrect semicolon at the end of a method header.,-,4.6,
+"L: Getting greater than or equal/less than or equal wrong, i.e. using => or =< instead of >= and <=.",O: Getting greater than or equal/less than or equal wrong (i.e. using => or =< instead of >= and <=.,-,9.0
+P: Including the types of parameters when invoking a method.,L: Including the types of parameters when in- voking a method.,3.6,
+Type errors,,,
+,P: Cannot implicitly convert type int [] to string [],8.5.3,
+I: Invoking methods with wrong arguments (e.g. wrong types).,A: Invoking methods with wrong arguments,"3.2, 3.4, 3.5, 3.6",
+Q: Incompatible types between method return and type,B: Incompatible types between method return and type of variable that the value is assigned to.,4.11,
+Other semantic errors,,,
+B: Use of == instead of .equals to compare strings.,K: Use of == instead of .equals to compare strings.,8.8,
+M: Trying to invoke a non-static method as if it was static. For example: MyClass.toString();,J: Trying to invoke a non-static method as if it was static.,3.9,
+N: A method that has a non-void return type is called and its return value ignored/discarded.,I: A method that has a non-void return type is called and its return value ignored/discarded.,-,8.0
+O: Control flow can reach end of non-void method without returning.,E: Control flow can reach end of non-void method without returning.,-,8.0
+"R: Class claims to implement an interface, but does not implement all the required methods.",C: Class claims to implement an interface but does not implement all the required methods. Invoking class method on object.,-,7.5
+-,D: Invoking class method on object.,3.9,
+,F: Undefined constructor in implicit constructor call.,5.0,
+-,G: Use of a non-initialized variable.,1.4,
+-,H: Object not defined.,7.6,
+,Logic,,
+-,R: Method with parameters: Confusion between declaring parameters of a method and passing parameters in a method invocation.,3.3,
+-,S: Improper casting.,8.5.3,
+-,T: Array index out of range.,8.10,
+-,U: Invoking a non-void method in a statement that requires a return value.,12.6,
