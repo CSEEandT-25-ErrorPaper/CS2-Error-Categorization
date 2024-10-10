@@ -736,9 +736,9 @@ Which returns a potential path between `[x1][y1]` and `[x2][y2]`. The energy pro
 ### `getMinimalCostCables(float maxFlow)`
 Which returns a list of cable sections. Find a set of paths that cover as many settlements with electricity as possible in a cost-minimal way. The paths should be structured as in `getMinimalCostPath` and use `maxFlow` units of energy as the maximum flow per cable. If complete coverage is not possible, remove the settlements with the lowest population successively (while cables can still pass through these fields). Return a list of cable sections. Each cable section should be a list of strings. The first two entries represent the `[x][y]` coordinates of the origin, the third and fourth entries represent the `[x][y]` coordinates of the cable’s destination. The fifth entry should indicate how much energy was produced at the origin field and transmitted through the cable. The sixth entry should indicate how much energy is used at the destination field (consider the `0.1` energy loss per step). The seventh entry should represent how much energy is transmitted through this cable. The order of the cable sections does not matter.
 
-## Example
+### Example
 
-```python
+```java
 grid = EnergyPlanner(5, 3)
 
 for i in range(5):
@@ -790,4 +790,9 @@ grid.getMinimalCostCables(30)
 //    [2, 0, 2, 1, 0.0, 0.1, 15.6],
 //    [2, 1, 2, 2, 0.0, 0.1, 15.5],
 //    [2, 2, 3, 2, 0.0, 0.1, 15.4],
-//    [3, 2, 4, ​⬤
+//    [3, 2, 4, 2, 0.0, 5.1, 15.3],
+//    [4, 2, 4, 1, 0.0, 0.1, 10.1],
+//    [4, 1, 4, 0, 0.0, 10.1, 10.1],
+// ]
+```
+
