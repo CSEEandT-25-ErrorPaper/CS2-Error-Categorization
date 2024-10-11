@@ -10,7 +10,7 @@ In the ```rainfall``` array, each row corresponds to a weather station, and each
 
 In the descriptors array, each column also represents a day, with each entry being one of the values: **"sunny"**, **“rainy”**, or **“thunderstorm”**.
 
-#### Example:
+##### Example:
 
 | Weather Stations | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 |
 |------------------|-------|-------|-------|-------|-------|-------|-------|
