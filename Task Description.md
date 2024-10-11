@@ -23,6 +23,7 @@ Table 1: Rainfall data from 3 weather stations over a period of 7 days
 | Day 1   | Day 2   | Day 3       | Day 4   | Day 5   | Day 6       | Day 7   |
 |---------|---------|-------------|---------|---------|-------------|---------|
 | sunny   | rainy   | thunderstorm| sunny   | sunny   | thunderstorm| sunny   |
+
 Table 2: Weather reports for the corresponding 7 days
 
 ### `dataPreparation()`
