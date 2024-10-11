@@ -8,7 +8,7 @@ A constructor in the corresponding programming language, which receives the weat
 
 In the ```rainfall``` array, each row corresponds to a weather station, and each column represents a day.
 
-In the descriptors array, each column also represents a day, with each entry being one of the values: “sunny”, “rainy”, or “thunderstorm”.
+In the descriptors array, each column also represents a day, with each entry being one of the values: **"sunny"**, **“rainy”**, or **“thunderstorm”**.
 
 #### Example:
 
@@ -87,8 +87,8 @@ This method creates a forecast based on the average rainfall per station and day
 - In the special case where the average rainfall over the last `n` days is exactly 75, return **"thunderstorm"**.
 
 #### Examples:
-- `n = 3` → The average rainfall over the last 3 days = (45+75+20+10+100+10+30+75+20)/9 = 42  → Return "sunny."
-- `n = 2` → The average rainfall over the last 2 days = (75+20+100+10+75+20)/6 = 50 → Return "rainy."
+- `n = 3` → The average rainfall over the last 3 days = (45+75+20+10+100+10+30+75+20)/9 = 42  → Return **"sunny"**
+- `n = 2` → The average rainfall over the last 2 days = (75+20+100+10+75+20)/6 = 50 → Return **"rainy"**
 
 # Task 2: University Network
 ### Task
