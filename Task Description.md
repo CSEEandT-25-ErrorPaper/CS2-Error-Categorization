@@ -3,14 +3,14 @@
 
 Create a class `Forecast`, which can analyze data from multiple weather stations and generate a weather forecast.
 
-#### `Constructor Forecast(int[][] rainfall, String[] descriptors)`
+### `Constructor Forecast(int[][] rainfall, String[] descriptors)`
 A constructor in the corresponding programming language, which receives the weather station data in two parameters. The first parameter is the rainfall data, given as a two-dimensional integer array rainfall, and the second parameter is the general weather report of the day, provided as a descriptive string in a string array descriptors.
 
 In the ```rainfall``` array, each row corresponds to a weather station, and each column represents a day.
 
 In the descriptors array, each column also represents a day, with each entry being one of the values: **"sunny"**, **“rainy”**, or **“thunderstorm”**.
 
-##### Example:
+#### Example:
 
 | Weather Stations | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 |
 |------------------|-------|-------|-------|-------|-------|-------|-------|
@@ -108,10 +108,10 @@ The university network should be a collaboration of multiple universities. Imple
 
 
 ### Student
-##`Student(String firstName, String surname, String email, String studentID)`
+### `Student(String firstName, String surname, String email, String studentID)`
 Which corresponds to the constructor of your chosen language and creates a student with the generated values.
 
-## `addCourse(Course course, String grade)`
+### `addCourse(Course course, String grade)`
  Adds a course to the student. If the course already exists, the grade is overwritten. If the new grade is "5.0," increment the number of failed attempts.
 
 
