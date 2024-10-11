@@ -17,6 +17,7 @@ In the descriptors array, each column also represents a day, with each entry bei
 | Station 1        | -10   | 22    | 33    | 19    | 45    | 75    | 20    |
 | Station 2        | 35    | -6    | 57    | 8     | 10    | -100  | 10    |
 | Station 3        | 15    | 20    | 29    | 39    | 30    | 75    | 20    
+
 Table 1: Rainfall data from 3 weather stations over a period of 7 days
 
 | Day 1   | Day 2   | Day 3       | Day 4   | Day 5   | Day 6       | Day 7   |
