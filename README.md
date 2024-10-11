@@ -20,3 +20,6 @@ This document lists the number of participants for each task.
 This document lists the number of errors each student made in each task and their total number of errors.
 ##### Students - Students Participation per Task
 This document shows which students submitted which tasks.
+
+#### Task Description
+This document contains all tasks the students were required to code, translated into English.
