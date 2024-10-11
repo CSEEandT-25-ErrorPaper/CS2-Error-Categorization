@@ -6,7 +6,7 @@ Create a class `Forecast`, which can analyze data from multiple weather stations
 ### `Constructor Forecast(int[][] rainfall, String[] descriptors)`
 A constructor in the corresponding programming language, which receives the weather station data in two parameters. The first parameter is the rainfall data, given as a two-dimensional integer array rainfall, and the second parameter is the general weather report of the day, provided as a descriptive string in a string array descriptors.
 
-In the rainfall array, each row corresponds to a weather station, and each column represents a day.
+In the ```rainfall``` array, each row corresponds to a weather station, and each column represents a day.
 
 In the descriptors array, each column also represents a day, with each entry being one of the values: “sunny”, “rainy”, or “thunderstorm”.
 
