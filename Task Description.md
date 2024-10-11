@@ -42,6 +42,8 @@ The rainfall data may contain errors, including negative values. This method sho
 | Station 2        | 35    | **21**    | 57    | 8     | 10    | **100**   | 10    |
 | Station 3        | 15    | 20    | 29    | 39    | 30    | 75    | 20    |
 
+Table 3: Rainfall after ```dataPreparation()```
+
 ### `totalRainfall()`
 
 This method calculates the total rainfall measured by the weather stations during the measurement period. 
