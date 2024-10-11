@@ -108,10 +108,10 @@ The university network should be a collaboration of multiple universities. Imple
 
 
 ### Student
-`Student(String firstName, String surname, String email, String studentID)`
+##`Student(String firstName, String surname, String email, String studentID)`
 Which corresponds to the constructor of your chosen language and creates a student with the generated values.
 
-### `addCourse(Course course, String grade)`
+## `addCourse(Course course, String grade)`
  Adds a course to the student. If the course already exists, the grade is overwritten. If the new grade is "5.0," increment the number of failed attempts.
 
 
