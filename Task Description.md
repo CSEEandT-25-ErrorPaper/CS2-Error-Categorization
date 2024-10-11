@@ -108,7 +108,7 @@ The university network should be a collaboration of multiple universities. Imple
 
 
 ### Student
-`Student(String first_name, String surname, String email, String studentID)`
+`Student(String firstName, String surname, String email, String studentID)`
 Which corresponds to the constructor of your chosen language and creates a student with the generated values.
 
 ### `addCourse(Course course, String grade)`
