@@ -1,15 +1,15 @@
 #### Error Categorization
 This section contains tables with data regarding the errors identified in the students’ code.
-##### Error Categorisation - Categoristation of all errors.
+##### Error Categorization - Categorization of all errors
 This document contains all errors we found for every student in every subcategory, as well as the percentage that each subcategory and supercategory contributes to the overall categorization.
-##### Error Categorisation - Reduced Categorisation
+##### Error Categorisation - Reduced Categorization
 This document includes the errors found for each student in each task, grouped by supercategories. It also provides the percentage that each supercategory represents in relation to the total errors.
 
-#### Categorisation Comparsion
+#### Categorization Comparsion
 This section contains tables with data used to compare our error framework with others.
-##### Categorisation Comparsion - Other frameworks
+##### Categorization Comparsion - Other frameworks
 This document shows how we translated the categories from our framework to those of other frameworks.
-##### Categorisation Comparsion - Percentage of errors per category across different studies
+##### Categorization Comparsion - Percentage of errors per category across different studies
 This document lists the percentage of errors in other frameworks compared to our findings.
 
 #### Students
