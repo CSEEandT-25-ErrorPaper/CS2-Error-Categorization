@@ -525,13 +525,13 @@ Implement a class `Processor`:
 Which corresponds to the constructor of your chosen language and creates an empty binary search tree.
 
 #### `getProcess(int id)`
-Which returns the node with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
+Which returns the node with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java.
 
 #### `getCategory(int id)`
-Which returns the category of the process with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
+Which returns the category of the process with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java.
 
 #### `insert(int id, String category)`
-Which adds a new process with the given parameters to the processor. If the ID is less than 0 or already in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
+Which adds a new process with the given parameters to the processor. If the ID is less than 0 or already in the tree, throw an `IndexOutOfBoundsException` in Java.
 
 #### `delete(int id)`
 Which deletes the process with the given ID. If the ID is less than 0 or not in the tree, throw an `IndexOutOfBoundsException` in Java.
