@@ -4,7 +4,7 @@
 Create a class `Forecast`, which can analyze data from multiple weather stations and generate a weather forecast.
 
 #### `Constructor Forecast(int[][] rainfall, String[] descriptors)`
-A constructor in the corresponding programming language, which receives the weather station data in two parameters. The first parameter is the rainfall data, given as a two-dimensional integer array rainfall, and the second parameter is the general weather report of the day, provided as a descriptive string in a string array descriptors.
+A constructor that receives the weather station data in two parameters. The first parameter is the rainfall data, given as a two-dimensional integer array rainfall, and the second parameter is the general weather report of the day, provided as a descriptive string in a string-array descriptors.
 
 In the ```rainfall``` array, each row corresponds to a weather station, and each column represents a day.
 
@@ -34,7 +34,7 @@ The rainfall data may contain errors, including negative values. This method sho
 - If the descriptor for the corresponding day is **"rainy"**, the negative value should be replaced by the average of all (positive) values from the other weather stations for that day. Use whole numbers for calculations. If all the stations' data for that day are erroneous, set the value for all stations to `0`.
 - If the descriptor for the corresponding day is **"thunderstorm"**, the negative value should be replaced by its corresponding absolute value.
 
-**Example**: This is how the example data mentioned above should look after modification by the method `dataPreparation`. Changes are marked in <span style="color:red">red</span>.
+**Example**: This is how the example data mentioned above should look after modification by the method `dataPreparation`.
 
 | Weather Stations | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 | Day 7 |
 |------------------|-------|-------|-------|-------|-------|-------|-------|
@@ -64,7 +64,7 @@ This method receives the index of the day in the array/list `rainfall` and a `mo
 - `getRainfall(7, "sum")` → returns -1
 
 #### `calculateTemperature()`
-This method determines the temperature per day for each weather station and returns it as a two-dimensional array/list. The temperature is calculated as follows:
+This method determines the temperature per day for each weather station and returns it as a two-dimensional array. The temperature is calculated as follows:
 - If the weather report for the specified day is **sunny**, triple the rainfall amount to get the temperature.
 - If the weather report for the specified day is **rainy**, reduce the rainfall amount by half to get the temperature.
 - If the weather report for the specified day is **thunderstorm**, return the remainder of the division of the rainfall by the current day index. If the day index is `0`, divide the rainfall amount by the number of weather stations.
@@ -96,7 +96,7 @@ This method creates a forecast based on the average rainfall per station and day
 Create classes for managing a university network.
 Classes should be created for students, courses, professors, and universities.
 
-A student is uniquely identified by their matriculation number (1-999). Additionally, a student has a first name, a last name, and an email. Furthermore, a student should have a collection of courses. These courses should internally be stored as either “passed” or “not passed”. Additionally, it should be recorded how many failed attempts the student has had in a particular course. For the latest exam, the grade should be stored, and a 5.0 should indicate “not passed”.
+A student is uniquely identified by their student ID number (1-999). Additionally, a student has a first name, a last name, and an email. Furthermore, a student should have a collection of courses. These courses should internally be stored as either “passed” or “not passed”. Additionally, it should be recorded how many failed attempts the student has had in a particular course. For the latest exam, the grade should be stored, and a 5.0 should indicate “not passed”.
 
 A course should have a title, a number of credits, and a professor.
 
@@ -109,7 +109,7 @@ The university network should be a collaboration of multiple universities. Imple
 
 ### Student
 #### `Student(String firstName, String surname, String email, String studentID)`
-Which corresponds to the constructor of your chosen language and creates a student with the generated values.
+Which creates a student with the generated values.
 
 #### `addCourse(Course course, String grade)`
  Adds a course to the student. If the course already exists, the grade is overwritten. If the new grade is "5.0," increment the number of failed attempts.
@@ -125,7 +125,7 @@ Which returns the surname.
 Which returns the email.
 
 #### `getStudentID()`
-Which returns the matriculation number.
+Which returns the student ID number.
 
 #### `getCourses()`
 Which returns the list of enrolled courses.
@@ -145,7 +145,7 @@ Which calculates and returns the average grade, excluding "5.0". The grades shou
 ### Docent
 
 #### `Docent(String firstName, String surname, String email)`
-Which corresponds to the constructor of your chosen language and creates a docent with the generated values.
+Which creates a docent with the generated values.
 
 #### `getFirstName()`
 Which returns the first name.
@@ -165,7 +165,7 @@ Which returns a list of course names the docent can teach.
 ### Course
 
 #### `Course(String name, int cp)`
-Which corresponds to the constructor of your chosen language and creates a course with the generated values.
+Which creates a course with the generated values.
 
 #### `getName()`
 Which returns the name of the course.
@@ -184,7 +184,7 @@ Which returns the docent for the course if one is set, otherwise `None`/`null`.
 
 ### University
 #### `University(String name)`
-Which corresponds to the constructor of your chosen language and creates a university with the generated values.
+Which creates a university with the generated values.
 
 #### `addDocent(Docent docent)`
 Which adds the given docent to the university. If this docent is already at the university, return the boolean value `False`, otherwise return `True`.
@@ -208,7 +208,7 @@ Which returns a list of courses.
 Which returns a list of courses that have no docent assigned.
 
 #### `addStudent(String firstName, String surname, String email)`
-Which adds a student to the university. A `Student` object should be created, and the matriculation number should be assigned as a consecutive number starting from 1. The matriculation number should always have six digits. If the number does not have six digits, fill it with leading zeros.
+Which adds a student to the university. A `Student` object should be created, and the student ID number should be assigned as a consecutive number starting from 1. The student ID number should always have six digits. If the number does not have six digits, fill it with leading zeros.
 
 #### `removeStudent(Student student)`
 Which unenrolls the student. If the student exists and was unenrolled, return `True`, otherwise return `False`.
@@ -233,7 +233,7 @@ Which returns a list of courses sorted in descending order based on their failur
 
 ### University Network
 #### `UniversityNetwork()`
-Which corresponds to the constructor of your chosen language and creates an empty university network.
+Which creates an empty university network.
 
 #### `registerUniversity(University university)`
 Which adds a university to the network. If this university is already in the network, return the boolean value `False`, otherwise return `True`.
@@ -255,7 +255,7 @@ Important: You are required to manually implement your own data structure and no
 Implement the following for the `Account` class:
 ### Account
 #### `constructor(String firstName, String name, String phoneNumber, int balance)`
-Which corresponds to the constructor of your chosen language and sets the attributes of the node to `firstName`, `name`, `phoneNumber`, and `balance`. The previous and next nodes should be initialized to `null` or the equivalent `None`.
+Which creates a new account sets the attributes of the node to `firstName`, `name`, `phoneNumber`, and `balance`. The previous and next nodes should be initialized to `null`.
 
 #### `getPrev()`
 Which returns the previous account.
@@ -273,7 +273,7 @@ Implement the following for the `Bank` class:
 ### Bank
 
 #### `constructor()`
-Which corresponds to the constructor of your chosen language and creates an empty list.
+Which creates an empty list.
 
 #### `getHead()`
 Returns the head of the list (the first element).
@@ -282,7 +282,7 @@ Returns the head of the list (the first element).
 Adds a new account to the bank at the last position.
 
 #### `get(int index)`
-Which returns the account at the given index. If the index is not present in the list, return `null` or `None`.
+Which returns the account at the given index. If the index is not present in the list, return `null`.
 
 #### `insert(int index, String firstName, String name, String phoneNumber, int balance)`
 Which creates a new account with the given values and adds it at the specified index. If the passed index matches the current size of the list, the new account is added at the end of the list.
@@ -411,7 +411,7 @@ Which sets the next node to `next`.
 This class should be used to store various orders in a doubly linked list. The following methods are required:
 
 #### `List()`
-Which corresponds to the constructor of your chosen language and creates an empty list.
+Which creates an empty list.
 
 #### `boolean append(Node node)`
 Which appends the node `node` to the list. The method should return `true` if the append operation was successful, otherwise it should return `false`.
@@ -492,8 +492,8 @@ Implement a Binary Search Tree that represents the CPU of a computer. Each proce
 
 Implement a class `Process`:
 
-#### `constructor(int id, String category)`
-Which corresponds to the constructor of your chosen language and initializes the process ID with `id` and the category of the process with `category`.
+#### `Process(int id, String category)`
+Which initializes the process ID with `id` and the category of the process with `category`.
 
 #### `getID()`
 Which returns the `id` of the process.
@@ -521,17 +521,17 @@ Which sets the right child of the process to the given process `right`.
 
 Implement a class `Processor`:
 
-#### `constructor()`
-Which corresponds to the constructor of your chosen language and creates an empty binary search tree.
+#### `Processor()`
+Which creates an empty binary search tree.
 
 #### `getProcess(int id)`
-Which returns the node with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java.
+Which returns the node with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
 
 #### `getCategory(int id)`
-Which returns the category of the process with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java.
+Which returns the category of the process with the given ID. If the ID is not in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
 
 #### `insert(int id, String category)`
-Which adds a new process with the given parameters to the processor. If the ID is less than 0 or already in the tree, throw an `IndexOutOfBoundsException` in Java.
+Which adds a new process with the given parameters to the processor. If the ID is less than 0 or already in the tree, throw an `IndexOutOfBoundsException` in Java, or an `IndexError` exception in Python.
 
 #### `delete(int id)`
 Which deletes the process with the given ID. If the ID is less than 0 or not in the tree, throw an `IndexOutOfBoundsException` in Java.
@@ -555,10 +555,10 @@ Which returns the longest path from the root (starting point) to a leaf (ending 
 Which returns the height of the processor. The root corresponds to height 0.
 
 #### `smallestGreaterKey(Process current, String category)`
-This method finds the smallest process in the tree that is greater than the given process and belongs to the specified `category`. If no such process exists, return `null` or `None`.
+This method finds the smallest process in the tree that is greater than the given process and belongs to the specified `category`. If no such process exists, return `null`.
 
 #### `findKthSmallest(int k)`
-This method finds the k-th smallest process in the processor and returns it. If the k-th smallest process does not exist, the method should return `null` or `None`.
+This method finds the k-th smallest process in the processor and returns it. If the k-th smallest process does not exist, the method should return `null`.
 
 #### `areIdentical(Processor otherProcessor)`
 This method checks whether the given processor `otherProcessor` is identical to the current processor, meaning they have the same structure and all processes match. It returns `True` if the processors are identical, otherwise `False`.
@@ -713,8 +713,8 @@ graph.getNonCrossingGraph();
 ### Task
 A network operator wants to build a new energy infrastructure based on renewable energies. However, there are some uncertainties regarding the best infrastructure, distribution, and usage within the legal framework. The network operator has a rough 2D map of its area of interest. This area is given by a width and height. Furthermore, this area consists of grid squares. For each of these grid squares, there is various information available, such as the potential energy gain from wind turbines and solar panels. Additionally, for each grid square, it is specified whether it is populated. If it is populated, both the population and the total average energy consumption are given. Each square should also have a cost factor, which describes how expensive it would be to lay a cable over this square. The cost of a cable between two adjacent squares is described by adding the costs of both squares. Write a class `EnergyPlanner` that abstracts this problem in the form of a class. Implement the following methods:
 
-#### `constructor(int width, int height)`
-Which corresponds to the constructor of your chosen language and creates a grid of size `width` x `height`. All fields should be uninhabited and have a potential energy gain of 0 for wind and solar energy.
+#### `EnergyPlanner(int width, int height)`
+Which creates a grid of size `width` x `height`. All fields should be uninhabited and have a potential energy gain of 0 for wind and solar energy.
 
 #### `setSettlement(int x, int y, int population, int powerConsumption)`
 Which sets a settlement on the field `[x][y]` with a population of `population` and a total energy consumption of `powerConsumption`.
