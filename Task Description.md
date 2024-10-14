@@ -131,10 +131,10 @@ Which returns the student ID number.
 Which returns the list of enrolled courses.
 
 #### `getGradeInCourse(Course course)`
-Which returns the grade in the specified course. If the course does not exist, return `None`/`null`.
+Which returns the grade in the specified course. If the course does not exist, return `null`.
 
 #### `getNumberOfFailedAttempts(Course course)`
-Which returns the number of failed attempts in the respective course. If the course does not exist, return `None`/`null`.
+Which returns the number of failed attempts in the respective course. If the course does not exist, return `null`.
 
 #### `getReachedCP()`
 Which returns the number of credit points earned from passed courses.
@@ -180,7 +180,7 @@ Which sets the docent for the course, replacing any existing one if present. Thi
 Which removes the current docent from the course.
 
 #### `getDocent()`
-Which returns the docent for the course if one is set, otherwise `None`/`null`.
+Which returns the docent for the course if one is set, otherwise `null`.
 
 ### University
 #### `University(String name)`
@@ -190,7 +190,7 @@ Which creates a university with the generated values.
 Which adds the given docent to the university. If this docent is already at the university, return the boolean value `False`, otherwise return `True`.
 
 #### `getDocent(String firstName, String surname)`
-Which returns the docent with the corresponding name. If no docent with this name exists, return `None`/`null`.
+Which returns the docent with the corresponding name. If no docent with this name exists, return `null`.
 
 #### `getListOfDocents()`
 Which returns a list of docents.
@@ -199,7 +199,7 @@ Which returns a list of docents.
 Which creates a new course at the university and returns it.
 
 #### `getCourse(String courseName)`
-Which returns the course with the corresponding name. If no course with this name exists, return `None`/`null`.
+Which returns the course with the corresponding name. If no course with this name exists, return `null`.
 
 #### `getListOfCourses()`
 Which returns a list of courses.
@@ -214,7 +214,7 @@ Which adds a student to the university. A `Student` object should be created, an
 Which unenrolls the student. If the student exists and was unenrolled, return `True`, otherwise return `False`.
 
 #### `getStudent(String firstName, String surname)`
-Which returns the student with the corresponding name. If no student with this name exists, return `None`/`null`.
+Which returns the student with the corresponding name. If no student with this name exists, return `null`.
 
 #### `getListOfStudents()`
 Which returns a list of students.
